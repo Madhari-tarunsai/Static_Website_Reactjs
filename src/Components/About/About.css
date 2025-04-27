@@ -1,0 +1,155 @@
+#about {
+  padding: 100px 20px; 
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#about-image {
+  flex: 1;
+  text-align: center;
+}
+
+#about-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: none;
+}
+
+#about-text h1 span {
+  color: orangered;
+}
+
+#about-text > span {
+  color: orangered;
+}
+
+#about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+#about-text h3 {
+  font-size: 1.2rem;
+  color: darkorange;
+  margin-bottom: 10px;
+}
+
+#about-text h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#about-text p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+#about-text ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+#about-text ul li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.learn-more {
+  color: darkorange;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 1199px) {
+  #about-text h1 {
+      font-size: 2.4rem;
+  }
+}
+
+
+@media (max-width: 991px) {
+  #about-text h1 {
+      font-size: 2.2rem;
+  }
+
+  #about-content {
+      gap: 30px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  #about-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+  }
+
+  #about-text h1 {
+      font-size: 2rem;
+  }
+
+  #about-text p,
+  #about-text ul li {
+      font-size: 1rem;
+  }
+
+  .learn-more {
+      display: inline-block;
+      margin-top: 20px;
+  }
+
+  #about-image {
+      margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  #about {
+      padding: 40px 20px;
+  }
+
+  #about-content {
+      gap: 20px;
+  }
+
+  #about-text h1 {
+      font-size: 1.8rem;
+  }
+
+  #about-text p,
+  #about-text ul li {
+      font-size: 0.95rem;
+  }
+
+  #about-image img {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px; 
+  }
+
+  .learn-more {
+      margin-top: 15px;
+  }
+}
